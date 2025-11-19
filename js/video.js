@@ -10,20 +10,24 @@ window.addEventListener("load", function() {
 });
 
 document.querySelector("#play").addEventListener("click", function() {
+	console.log("Video Plays")
 	video.play();
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
+	console.log("Video Pause")
 	video.pause();
 });
 
-// document.querySelector("#slower").addEventListener("click", function() {
-// 	console.log();
-// });
+document.querySelector("#slower").addEventListener("click", function() {
+	video.playbackRate = 0.9;
+	console.log("Video Slowed to" + video.playbackRate);
+});
 
-// document.querySelector("#faster").addEventListener("click", function() {
-// 	console.log("Speed Up Video");
-// });
+document.querySelector("#faster").addEventListener("click", function() {
+	video.playbackRate = 1.;
+	console.log("Video Sped to" + video.playbackRate)
+});
 
 // document.querySelector("#skip").addEventListener("click", function() {
 // 	console.log("Skip Video");
