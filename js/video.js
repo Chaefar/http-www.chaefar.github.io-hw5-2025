@@ -25,13 +25,14 @@ document.querySelector("#slower").addEventListener("click", function() {
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate = 1.;
+	video.playbackRate = 1.1;
 	console.log("Video Sped to" + video.playbackRate)
 });
 
-// document.querySelector("#skip").addEventListener("click", function() {
-// 	console.log("Skip Video");
-// });
+document.querySelector("#skip").addEventListener("click", function() {
+	console.log("Skip Video");
+
+});
 
 // document.querySelector("#mute").addEventListener("click", function() {
 // });
