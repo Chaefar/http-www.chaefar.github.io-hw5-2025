@@ -54,17 +54,17 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 document.querySelector("#slider").addEventListener("click", function() {
 	video.volume = document.querySelector("#slider").value/100;
-	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value;
+	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value + "%";
 	console.log("Video Volume is " + video.volume);
 
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
-	document.querySelector("player1").class + "oldschool"
-	console.log("Video Is Old School")
+	document.querySelector("player1").class + "oldschool";
+	console.log("Video Is Old School");
 });
 
 document.querySelector("#orig").addEventListener("click", function() {
-	document.querySelector("player1").style =
-	console.log("Video Is Original")
+	document.querySelector("player1").class - "oldschool";
+	console.log("Video Is Original");
 });
