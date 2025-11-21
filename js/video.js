@@ -20,12 +20,12 @@ document.querySelector("#pause").addEventListener("click", function() {
 });
 
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate = video.playbackRate/0.1;
+	video.playbackRate = video.playbackRate*0.9;
 	console.log("Video Slowed to" + video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate = 1.1;
+	video.playbackRate = video.playbackRate/0.9;
 	console.log("Video Sped to" + video.playbackRate)
 });
 
