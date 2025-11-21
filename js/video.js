@@ -21,18 +21,24 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function() {
 	video.playbackRate = video.playbackRate*0.9;
-	console.log("Video Slowed to" + video.playbackRate);
+	console.log("Video Slowed to " + video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
 	video.playbackRate = video.playbackRate/0.9;
-	console.log("Video Sped to" + video.playbackRate)
+	console.log("Video Sped to " + video.playbackRate);
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	console.log("Skip Video");
-
+	if (video.currentTime >= video.duration){
+		video.currentTime = 0;
+	}
+	else {
+		video.currentTime = video.currentTime + 10;
+	}
+	console.log("Video Skipped To " + video.currentTime);
 });
 
-// document.querySelector("#mute").addEventListener("click", function() {
-// });
+document.querySelector("#mute").addEventListener("click", function() {
+
+});
