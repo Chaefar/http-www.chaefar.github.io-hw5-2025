@@ -20,7 +20,7 @@ document.querySelector("#pause").addEventListener("click", function() {
 });
 
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate = 0.9;
+	video.playbackRate = video.playbackRate/0.1;
 	console.log("Video Slowed to" + video.playbackRate);
 });
 
