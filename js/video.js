@@ -60,11 +60,11 @@ document.querySelector("#slider").addEventListener("click", function() {
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
-	document.querySelector("video").class + "oldschool";
+	document.querySelector("video").classList.add("oldSchool");
 	console.log("Video Is Old School");
 });
 
 document.querySelector("#orig").addEventListener("click", function() {
-	document.querySelector("video").class - "oldschool";
+	document.querySelector("video").classList.remove("oldSchool");
 	console.log("Video Is Original");
 });
